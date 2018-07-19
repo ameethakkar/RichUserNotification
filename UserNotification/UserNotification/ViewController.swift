@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import MapKit
 
 class ViewController: UIViewController {
 
@@ -95,6 +96,28 @@ class ViewController: UIViewController {
         let request = UNNotificationRequest(identifier: "Basic", content: content, trigger: trigger)
         
         center.add(request)
+    }
+    
+    func locationBasedNotification()
+    {
+        let center = UNUserNotificationCenter.current()
+        
+        let content = UNMutableNotificationContent()
+        content.title = "Location Based Notification"
+        content.subtitle = "Subtitle"
+        content.body = "This is the body of location based notification"
+        
+        let centerCoordinate = CLLocationCoordinate2DMake(38.9736, -100.8765)
+        let region = CLCircularRegion(center: centerCoordinate, radius: 50, identifier: "home")
+        region.notifyOnEntry = true
+        region.notifyOnExit = false
+        
+        let trigger = UNLocationNotificationTrigger(region: region, repeats: true)
+        
+        let request = UNNotificationRequest(identifier: "location", content: content, trigger: trigger)
+        
+        center.add(request, withCompletionHandler: nil)
+        
     }
 
     func getList()

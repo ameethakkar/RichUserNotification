@@ -13,7 +13,7 @@
 		B224F5E020ED7CAD001BB072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B224F5DF20ED7CAD001BB072 /* Assets.xcassets */; };
 		B224F5E320ED7CAD001BB072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B224F5E120ED7CAD001BB072 /* LaunchScreen.storyboard */; };
 		B224F5ED20ED8F60001BB072 /* Deer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B224F5EC20ED8F5F001BB072 /* Deer.mp4 */; };
-		B224F5EF20ED8F82001BB072 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B224F5EE20ED8F82001BB072 /* alert.mp3 */; };
+		B2B4EF4321010377002D54AB /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B2B4EF4221010377002D54AB /* alert.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		B224F5E220ED7CAD001BB072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B224F5E420ED7CAD001BB072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B224F5EC20ED8F5F001BB072 /* Deer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Deer.mp4; sourceTree = "<group>"; };
-		B224F5EE20ED8F82001BB072 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alert.mp3; path = "../../../Downloads/Section 15 - NotificationApp/NotificationApp/alert.mp3"; sourceTree = "<group>"; };
+		B2B4EF4221010377002D54AB /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		B224F5D720ED7CAC001BB072 /* UserNotification */ = {
 			isa = PBXGroup;
 			children = (
+				B2B4EF4221010377002D54AB /* alert.mp3 */,
 				B224F5D820ED7CAC001BB072 /* AppDelegate.swift */,
 				B224F5DA20ED7CAC001BB072 /* ViewController.swift */,
-				B224F5EE20ED8F82001BB072 /* alert.mp3 */,
 				B224F5EC20ED8F5F001BB072 /* Deer.mp4 */,
 				B224F5DC20ED7CAC001BB072 /* Main.storyboard */,
 				B224F5DF20ED7CAD001BB072 /* Assets.xcassets */,
@@ -128,11 +128,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B224F5EF20ED8F82001BB072 /* alert.mp3 in Resources */,
 				B224F5E320ED7CAD001BB072 /* LaunchScreen.storyboard in Resources */,
 				B224F5E020ED7CAD001BB072 /* Assets.xcassets in Resources */,
 				B224F5DE20ED7CAC001BB072 /* Main.storyboard in Resources */,
 				B224F5ED20ED8F60001BB072 /* Deer.mp4 in Resources */,
+				B2B4EF4321010377002D54AB /* alert.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
